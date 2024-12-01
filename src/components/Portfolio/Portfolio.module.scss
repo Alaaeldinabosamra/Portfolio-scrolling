@@ -1,0 +1,79 @@
+@import '../../styles/contants.scss';
+
+.wrapper{
+    background: white;
+    overflow: hidden;
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+        .heading{
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap; 
+            >:nth-child(2)
+            {
+                text-decoration: underline;
+                color: orange;
+                cursor: pointer;
+            }
+        }    
+        
+        .showCase{
+            width: 100%;
+            gap: 1.5rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            >img{
+
+                @media (max-width: $sm) {
+                    width: 100%;
+                }
+                border-radius: 20px;
+                max-width: 25rem;
+                max-height: 18rem;
+                box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+/* Portfolio.module.scss */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increased shadow around the card */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Lift effect when hovering */
+  }
+  
+  .iframe-container {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for iframe container */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .website-frame {
+    width: 100%;
+    height: 350px; /* Fixed height for iframe */
+    border: none;
+    border-radius: 8px; /* Rounded corners for the iframe */
+  }
+  
